@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
     <style> 
+        /* Header styles */
         header {
             background-color: #000;
             color: white;
@@ -14,8 +15,9 @@
             width: 100%;
             z-index: 1000;
             display: flex;
-            justify-content: space-between; /* This will keep title on the left and links on the right */
-            align-items: center; /* Keep title and links aligned */
+            justify-content: space-between; /* Title on the left, links on the right */
+            align-items: center;
+            box-sizing: border-box; /* Ensures padding doesn't cause overflow */
         }
 
         /* Style for the logo/title in the header */
@@ -23,17 +25,20 @@
             font-size: 18px; /* Reduce font size of the title */
             margin: 0;
             color: white; /* Ensure Mack Herman stays white */
+            flex-shrink: 0; /* Prevent shrinking if space is limited */
         }
 
         /* Style for the navigation links */
         nav {
-            margin-left: auto; /* This pushes the navigation links to the right */
+            display: flex; /* Use flexbox for navigation */
+            margin-left: 20px;  /* Adds space to the left of the navigation links */
+            justify-content: flex-start; /* Align the links to the left */
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px; /* Reduced margin between links */
             font-size: 14px; /* Reduce font size of the links */
         }
 
@@ -121,4 +126,3 @@
 
 </body>
 </html>
-
