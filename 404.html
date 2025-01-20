@@ -1,1 +1,124 @@
-fgjdfj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style> 
+        header {
+            background-color: #000;
+            color: white;
+            padding: 15px 20px;  /* Reduced padding for a smaller height */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between; /* This will keep title on the left and links on the right */
+            align-items: center; /* Keep title and links aligned */
+        }
+
+        /* Style for the logo/title in the header */
+        .logo h1 {
+            font-size: 18px; /* Reduce font size of the title */
+            margin: 0;
+            color: white; /* Ensure Mack Herman stays white */
+        }
+
+        /* Style for the navigation links */
+        nav {
+            margin-left: auto; /* This pushes the navigation links to the right */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px; /* Reduce font size of the links */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styles */
+        main {
+            margin-top: 60px; /* Keep margin to avoid overlap with the header */
+            padding: 20px;
+        }
+
+        /* Styling for the 404 page content */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 100px;
+            color: #000; /* This color is for the 404 title */
+        }
+
+        .container p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .container a {
+            color: #FF5733;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ff4511;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mack Herman</h1> <!-- Title for the header stays white -->
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 404 Content -->
+    <div class="container">
+        <h1>404</h1>
+        <p>Haha! The page you are looking for could not be found. >:)</p>
+        <button class="button" onclick="window.location.href='/'">Return to Homepage</button>
+    </div>
+
+</body>
+</html>
+
