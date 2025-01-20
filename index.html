@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 
         /* Style for the logo/title in the header */
         .logo h1 {
-            font-size: 18px; /* Reduce font size of the title */
+            font-size: 20px; /* Reduce font size of the title */
             margin: 0;
             color: white; /* Ensure Mack Herman stays white */
             flex-shrink: 0; /* Prevent shrinking if space is limited */
@@ -53,8 +53,20 @@
 
         /* Main content styles */
         main {
-            margin-top: 60px; /* Keep margin to avoid overlap with the header */
+            margin-top: 20px; /* Keep margin to avoid overlap with the header */
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text within the main content */
+            min-height: 80vh; /* Ensure there's enough space for centering */
+        }
+
+        /* Make h2 bigger */
+        h2 {
+            font-size: 60px; /* Increase the font size of h2 */
+            margin-bottom: 10px; /* Add some space below the h2 */
         }
     </style>
 </head>
@@ -68,16 +80,15 @@
         <nav>
             <a href="../">Home</a>
             <a href="projects">Projects</a>
-            <a href="services">Services</a>
             <a href="contact">Contact</a>
         </nav>
     </header>
 
     <!-- Main content -->
     <main>
-        <h2>Mack Herman - The man, the myth, the legend.</h2>
-        <p>Mack Herman is a 15 year old web developer in high school.</p>
+        <h2>Mack Herman</h2>
+        <p>I'm Mack Herman, a 15/yo web developer in high school.</p>
     </main>
 
 </body>
-</html>
+</html> 
