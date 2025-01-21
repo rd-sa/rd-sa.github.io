@@ -5,14 +5,21 @@
     <title>Mack Herman</title>
     <link rel="icon" href="../images/faviconn.png" type="image/png">
     <style>
-    /* Header styles */
+    /* Global Styles */
+        * {
+            box-sizing: border-box; /* Ensure padding and borders don't cause overflow */
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #d3d3d3, #000000); /* Gradient from light grey to black */
             margin: 0;
             padding: 0;
             color: white; /* Make text white to stand out on the dark background */
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
         }
+
+    /* Header styles */
         header {
             background-color: #000;
             color: white;
@@ -56,7 +63,7 @@
             text-decoration: underline;
         }
 
-        /* Main content styles */
+    /* Main content styles */
         main {
             margin-top: 20px;
             padding: 20px;
@@ -105,7 +112,7 @@
         .divider {
             width: 100%;
             height: 2px;
-            background-color: #444;
+            background-color: #333;
             margin: 20px 0;
         }
 
