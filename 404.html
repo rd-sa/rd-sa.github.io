@@ -7,6 +7,19 @@
     <link rel="icon" href="../images/faviconn.png" type="image/png">
     <style> 
         /* Header styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d3d3d3, #000000); /* Gradient from light grey to black */
+            margin: 0;
+            padding: 0;
+            color: white; /* Ensure text is white on the dark background */
+            display: flex;
+            justify-content: center; /* Horizontally center the body content */
+            align-items: center; /* Vertically center the body content */
+            height: 100vh; /* Make sure the body takes up full height */
+            text-align: center; /* Center text */
+        }
+
         header {
             background-color: #000;
             color: white;
@@ -27,6 +40,12 @@
             margin: 0;
             color: white; /* Ensure Mack Herman stays white */
             flex-shrink: 0; /* Prevent shrinking if space is limited */
+        }
+
+        /* Remove the blue color and underline from the anchor link inside the .logo */
+        .logo h1 a {
+            color: white; /* Make the link white */
+            text-decoration: none; /* Remove underline */
         }
 
         /* Style for the navigation links */
@@ -54,21 +73,14 @@
         }
 
         /* Styling for the 404 page content */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: linear-gradient(to bottom, #d3d3d3, #000000); /* Gradient from light grey to black */
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
         .container {
             max-width: 600px;
-            margin: 100px auto;
+            margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* This ensures content inside the container is centered */
         }
 
         .container h1 {
@@ -108,7 +120,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <h1>Mack Herman</h1> <!-- Title for the header stays white -->
+            <h1><a href="../">Mack Herman</a></h1> <!-- Ensure the link is inside <a> -->
         </div>
         <nav>
             <a href="../">Home</a>
