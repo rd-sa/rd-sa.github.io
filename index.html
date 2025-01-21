@@ -1,4 +1,3 @@
-<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +8,10 @@
     /* Header styles */
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d3d3d3, #000000); /* Gradient from light grey to black */
+            margin: 0;
+            padding: 0;
+            color: white; /* Make text white to stand out on the dark background */
         }
         header {
             background-color: #000;
@@ -33,6 +36,12 @@
             flex-shrink: 0; /* Prevent shrinking if space is limited */
         }
 
+        /* Remove the blue color and underline from the anchor link inside the .logo */
+        .logo h1 a {
+            color: white; /* Make the link white */
+            text-decoration: none; /* Remove underline */
+        }
+
         /* Style for the navigation links */
         nav {
             display: flex; /* Use flexbox for navigation */
@@ -53,7 +62,7 @@
 
         /* Main content styles */
         main {
-            margin-top: 20px; /* Keep margin to avoid overlap with the header */
+            margin-top: 80px; /* Keep margin to avoid overlap with the fixed header */
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -75,7 +84,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <h1>Mack Herman</h1>
+            <h1><a href="../">Mack Herman</a></h1> <!-- Ensure the link is inside <a> -->
         </div>
         <nav>
             <a href="../">Home</a>
@@ -91,4 +100,4 @@
     </main>
 
 </body>
-</html> 
+</html>
