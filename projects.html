@@ -65,18 +65,26 @@
             gap: 40px;
             padding: 100px 20px 20px 20px;
             flex-wrap: wrap;
+            justify-content: center; /* Align items centrally */
         }
 
+        /* Styles for individual project blocks */
         .project {
             text-align: center;
-            max-width: 500px;
+            width: 100%;
             margin-bottom: 20px;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 500px; /* Ensures image doesn't grow too large */
         }
 
+        /* Set a max-width for the images */
         .project img {
-            width: 100%; /* Full width for the image */
-            height: auto;
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-width: 500px; /* Max width for the image */
             border-radius: 8px;
             transition: filter 0.3s ease;
         }
@@ -126,6 +134,27 @@
             opacity: 1; /* Show overlay when project 2 is hovered */
         }
 
+        /* Ensure all images in the projects stay aligned and scale */
+        .projects-container .project {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsive adjustment for smaller screens */
+        @media screen and (max-width: 768px) {
+            .projects-container {
+                flex-direction: column; /* Stack the images vertically on smaller screens */
+                gap: 20px;
+            }
+
+            /* Ensure images are all resized uniformly */
+            .project img {
+                max-width: 100%; /* Allow images to resize fully within their container */
+                height: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -148,7 +177,7 @@
         <div class="project">
             <h3>Project Plus</h3>
             <p>A decent game site with over 230 games. These games are fully compiled into html5.</p>
-            <a href="https://example.com" target="_blank">
+            <a href="https://sites.google.com/view/project-plus" target="_blank">
                 <img src="https://images.sftcdn.net/images/t_app-cover-m,f_auto/p/db5340ec-9b34-11e6-baab-00163ed833e7/410509102/batch-image-resizer-screenshot.gif" alt="Project 1">
             </a>
         </div>
@@ -167,8 +196,7 @@
         <!-- Project 3 -->
         <div class="project">
             <h3>My Website</h3>
-            <p>This beautiful site that you are on right now. Designed to be simplistic.</p>
-            <a href="https://example.com" target="_blank">
+            <p>This beautiful site that you are on right now. Designed to be very simplistic, but also innovative. </p>
                 <img src="https://images.sftcdn.net/images/t_app-cover-m,f_auto/p/db5340ec-9b34-11e6-baab-00163ed833e7/410509102/batch-image-resizer-screenshot.gif" alt="Project 3">
             </a>
         </div>
