@@ -2173,15 +2173,17 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
-		background-position: center center;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		padding: 8em 0;
-		margin: 4em 0 0 0;
-	}
+	   background: #CCE8F4 url("../../images/pic01.jpg");
+	   background-position: center center;
+	   background-size: auto 100%;
+	   background-repeat: no-repeat;
+	   text-align: center;
+	   position: relative;
+	   padding: 8em 0;
+	   margin: 4em auto 0 auto; /* Center horizontally */
+	   width: 100%; /* Or use a value like 90%, 1200px, etc. */
+	   max-width: 1600px; /* Optional: limit how wide it can go */
+        }          
 
 		#banner header {
 			background-color: rgba(34, 30, 31, 0.98);
