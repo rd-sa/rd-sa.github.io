@@ -158,32 +158,29 @@
   </footer>
 
   <script>
-    // ---- Update year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // ---- Projects data: edit this array to add your projects
     const projects = [
       {
         title: 'Upcoming AI Project...',
         blurb: 'In the early stages of building an AI-powered tool.',
-        href: '#',
-        tag: 'Widget'
+        href: '',
+        tag: 'Under Development.'
       },
       {
         title: 'Project Plus Unblocked Games',
-        blurb: 'An awesome game site that had hundreds of games. It was good while it lasted, but sadly all good things have to come to an end. R.I.P. (December 5th, 2023 - March 5th, 2025).',
-        href: '#',
-        tag: 'Tools'
+        blurb: 'An awesome game site that had hundreds of games. It was good while it lasted, but sadly all good things have to come to an end.',
+        href: '',
+        tag: 'R.I.P. Project Plus — (December 5th, 2023 - March 5th, 2025).'
       },
       {
-        title: 'Orion Drift Helpers',
-        blurb: 'Small QoL scripts and a minimal site for community events.',
-        href: '#',
-        tag: 'Community'
+        title: 'This Website',
+        blurb: 'A simple (but visually appealing ) fully static website. Made with HTML, CSS, and JS.',
+        href: '',
+        tag: 'Personal Website'
       }
     ];
 
-    // ---- Render projects
     const grid = document.getElementById('projectsGrid');
     function card({title, blurb, href, tag}) {
       const el = document.createElement('a');
@@ -201,7 +198,6 @@
     }
     projects.forEach(p => grid.appendChild(card(p)));
 
-    // ---- Smooth scroll for in-page links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
         const id = a.getAttribute('href').slice(1);
@@ -216,6 +212,7 @@
   </main>
 </body>
 </html>
+
 
 
 
