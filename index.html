@@ -1,477 +1,217 @@
-<!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Mack Herman</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<!-- Glitchy typing effect styles -->
-		<style>
-			@keyframes glitch {
-				0%   { clip-path: inset(0 0 90% 0); }
-				10%  { clip-path: inset(10% 0 85% 0); }
-				20%  { clip-path: inset(15% 0 70% 0); }
-				30%  { clip-path: inset(40% 0 40% 0); }
-				40%  { clip-path: inset(70% 0 10% 0); }
-				50%  { clip-path: inset(30% 0 50% 0); }
-				60%  { clip-path: inset(20% 0 65% 0); }
-				70%  { clip-path: inset(80% 0 5% 0); }
-				80%  { clip-path: inset(15% 0 70% 0); }
-				90%  { clip-path: inset(10% 0 85% 0); }
-				100% { clip-path: inset(0 0 90% 0); }
-			}
-
-			@keyframes blink {
-                                0%, 100%   { border-right-color: transparent; }
-                                50%        { border-right-color: rgba(255,255,255,0.75); }
-                        }
-
-                        #glitch-text {
-                                position: relative;
-                                display: inline-block;
-                                color: #fff;
-                                font-family: 'Courier New', monospace;
-                                font-size: 2em;
-                                white-space: nowrap;
-                                overflow: hidden;
-                                border-right: 2px solid rgba(255,255,255,0.75);
-                                animation: blink 0.8s step-start infinite;
-                        } 
-			#glitch-text::after {
-				content: attr(data-text);
-				position: absolute;
-				top: 0; left: 0;
-				color: #fff;
-				text-shadow: -2px 0 red;
-				animation: glitch 1s infinite linear alternate-reverse;
-				overflow: hidden;
-			}
-		</style>
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-			<section id="header">
-
-				<!-- Logo -->
-				<h1><a href="index.html">Mack Herman</a></h1>
-
-				<!-- Banner -->
-				<section id="banner">
-					<header>
-						<h2>Hello, it's Mack!</h2>
-						<!-- Glitchy typing target -->
-						<p id="glitch-text" data-text=""></p>
-					</header>
-				</section>
-
-				<!-- Intro -->
-				<section id="intro" class="container">
-					<div class="row">
-						<div class="col-4 col-12-medium">
-							<section class="first">
-								<i class="icon solid featured fa-cog"></i>
-								<header>
-									<h2>Ipsum consequat</h2>
-								</header>
-								<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section class="middle">
-								<i class="icon solid featured alt fa-bolt"></i>
-								<header>
-									<h2>Magna etiam dolor</h2>
-								</header>
-								<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section class="last">
-								<i class="icon solid featured alt2 fa-star"></i>
-								<header>
-									<h2>Tempus adipiscing</h2>
-								</header>
-								<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<ul class="actions">
-							<li><a href="#" class="button large">Get Started</a></li>
-							<li><a href="#" class="button alt large">Learn More</a></li>
-						</ul>
-					</footer>
-				</section>
-
-			</section>
-
-			<!-- Main -->
-			<section id="main">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-
-							<!-- Portfolio -->
-							<section>
-								<header class="major">
-									<h2>My Portfolio</h2>
-								</header>
-								<div class="row">
-									<div class="col-4 col-6-medium col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-											<header>
-												<h3>Ipsum feugiat et dolor</h3>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">Find out more</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-											<header>
-												<h3>Sed etiam lorem nulla</h3>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">Find out more</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-											<header>
-												<h3>Consequat et tempus</h3>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">Find out more</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-											<header>
-												<h3>Blandit sed adipiscing</h3>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">Find out more</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-											<header>
-												<h3>Etiam nisl consequat</h3>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">Find out more</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-											<header>
-												<h3>Dolore nisl feugiat</h3>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">Find out more</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-								</div>
-							</section>
-
-						</div>
-						<div class="col-12">
-
-							<!-- Blog -->
-							<section>
-								<header class="major">
-									<h2>The Blog</h2>
-								</header>
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-											<header>
-												<h3>Magna tempus consequat</h3>
-												<p>Posted 45 minutes ago</p>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-													<li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-									<div class="col-6 col-12-small">
-										<section class="box">
-											<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-											<header>
-												<h3>Aptent veroeros aliquam</h3>
-												<p>Posted 45 minutes ago</p>
-											</header>
-											<p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-													<li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-												</ul>
-											</footer>
-										</section>
-									</div>
-								</div>
-							</section>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Footer -->
-			<section id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-8 col-12-medium">
-							<section>
-								<header>
-									<h2>Blandit nisl adipiscing</h2>
-								</header>
-								<ul class="dates">
-									<li>
-										<span class="date">Jan <strong>27</strong></span>
-										<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-										<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>23</strong></span>
-										<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-										<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>15</strong></span>
-										<h3><a href="#">Magna tempus lorem feugiat</a></h3>
-										<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>12</strong></span>
-										<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-										<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>10</strong></span>
-										<h3><a href="#">Blandit tempus aliquam?</a></h3>
-										<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
-									</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section>
-								<header>
-									<h2>What's this all about?</h2>
-								</header>
-								<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-								<p>
-									This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-									<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-									the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-								</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="#" class="button">Find out more</a></li>
-									</ul>
-								</footer>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section>
-								<header>
-									<h2>Tempus consequat</h2>
-								</header>
-								<ul class="divided">
-									<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-									<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-									<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-									<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-									<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-									<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section>
-								<header>
-									<h2>Ipsum et phasellus</h2>
-								</header>
-								<ul class="divided">
-									<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-									<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-									<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-									<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-									<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-									<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section>
-								<header>
-									<h2>Vitae tempor lorem</h2>
-								</header>
-								<ul class="social">
-									<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-									<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-									<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-									<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
-									<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-								</ul>
-								<ul class="contact">
-									<li>
-										<h3>Address</h3>
-										<p>
-											Untitled Incorporated<br />
-											1234 Somewhere Road Suite<br />
-											Nashville, TN 00000-0000
-										</p>
-									</li>
-									<li>
-										<h3>Mail</h3>
-										<p><a href="#">someone@untitled.tld</a></p>
-									</li>
-									<li>
-										<h3>Phone</h3>
-										<p>(800) 000-0000</p>
-									</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-12">
-
-							<!-- Copyright -->
-							<div id="copyright">
-								<ul class="links">
-									<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-								</ul>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-		<!-- Glitchy typing effect script -->
-		<script>
-  const text   = "An Online Entrepreneur";
-  const el     = document.getElementById("glitch-text");
-  let   idx    = 0;
-  let   phase  = 0;
-  let   timer;
-
-  function nextAction() {
-    clearTimeout(timer);
-
-    switch (phase) {
-      case 0: // 0 → full
-        if (idx < text.length) {
-          idx++;
-          render();
-          timer = setTimeout(nextAction, 80);
-        } else {
-          phase = 1;
-          timer = setTimeout(nextAction, 500);
-        }
-        break;
-
-      case 1: // full → 1 char
-        if (idx > 1) {
-          idx--;
-          render();
-          timer = setTimeout(nextAction, 50);
-        } else {
-          phase = 2;
-          timer = setTimeout(nextAction, 300);
-        }
-        break;
-
-      case 2: // 1 char → random midpoint
-        const target = 1 + Math.floor(Math.random() * (text.length - 1));
-        if (idx < target) {
-          idx++;
-          render();
-          timer = setTimeout(nextAction, 60);
-        } else {
-          phase = 3;
-          timer = setTimeout(nextAction, 400);
-        }
-        break;
-
-      case 3: // midpoint → full (gradual)
-        if (idx < text.length) {
-          idx++;
-          render();
-          timer = setTimeout(nextAction, 80);
-        } else {
-          phase = 1;              // loop back to erasing
-          timer = setTimeout(nextAction, 500);
-        }
-        break;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mack Herman — Personal Website</title>
+  <meta name="description" content="Personal website of Mack Herman — projects, about, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: rgba(255,255,255,0.06);
+      --text: #e6eef8;
+      --muted: #a2b0c2;
+      --brand: #70b8ff;
+      --accent: #a78bfa;
+      --ring: rgba(112,184,255,.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
     }
-  }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1000px 500px at 10% -10%, rgba(167,139,250,.15), transparent 60%),
+        radial-gradient(1000px 600px at 110% 10%, rgba(112,184,255,.12), transparent 60%),
+        linear-gradient(180deg, #0b0f14 0%, #0d1117 100%);
+      background-attachment: fixed;
+      line-height: 1.6;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 90%); margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(13,17,23,.75), rgba(13,17,23,.35));
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { font-weight: 800; letter-spacing: 0.5px; }
+    .brand .dot { color: var(--accent); }
+    nav { display: flex; }
+    nav a { margin-left: 18px; color: var(--muted); font-weight: 600; }
+    nav a:hover { color: var(--text); }
+    .hero { padding: 64px 0 32px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; }
+    .hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.05; margin: 0 0 16px; }
+    .hero p { margin: 0 0 24px; color: var(--muted); font-size: clamp(16px, 1.4vw, 18px); }
+    .card { background: var(--panel); border: 1px solid rgba(255,255,255,.08); padding: 20px; border-radius: 16px; box-shadow: var(--shadow); }
+    .cta { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 12px; font-weight: 700; color: #0b0f14; background: linear-gradient(90deg, var(--brand), var(--accent)); border: none; cursor: pointer; box-shadow: 0 8px 20px var(--ring); }
+    .cta:hover { filter: brightness(1.05); }
+    .tag { display: inline-block; padding: 10px 10px; border-radius: 999px; background: rgba(167,139,250,.12); color: var(--accent); font-weight: 700; font-size: 12px; }
+    section { padding: 56px 0; }
+    section h2 { font-size: clamp(24px, 3.5vw, 34px); margin: 0 0 18px; }
+    section .sub { color: var(--muted); margin-top: -4px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .project-card { position: relative; overflow: hidden; border-radius: 14px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); transition: transform .2s ease, border-color .2s ease; }
+    .project-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.18); }
+    .project-thumb { aspect-ratio: 16/9; width: 100%; background: linear-gradient(135deg, rgba(112,184,255,.18), rgba(167,139,250,.18)); display: grid; place-items: center; font-weight: 800; color: rgba(255,255,255,.85); letter-spacing: 0.5px; }
+    .project-body { padding: 14px 16px 16px; }
+    .project-title { margin: 0 0 6px; font-size: 18px; }
+    .project-meta { color: var(--muted); font-size: 14px; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .footer { padding: 36px 0 52px; color: var(--muted); border-top: 1px solid rgba(255,255,255,.06); text-align: center; }
+    .socials { display: flex; gap: 12px; }
+    .socials a { padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); font-weight: 700; }
+    .socials a:hover { background: rgba(255,255,255,.1); }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Mack Herman<span class="dot">.</span></div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">Hello</span>
+        <h1>I'm <span style="color:var(--brand);">Mack Herman</span> — I build useful things on the web.</h1>
+        <p>Simple ideas, clean execution, and just enough polish to feel special. Scroll to see a few projects, or reach out if you want to collaborate.</p>
+        <a class="cta" href="#projects" aria-label="Jump to Projects">
+          <span>See my projects</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 5L20 12L13 19" stroke="#0b0f14" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 12H4" stroke="#0b0f14" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Quick facts</h3>
+        <ul style="margin:10px 0 0 18px; color: var(--muted);">
+          <li>Loves turning rough ideas into shipped apps.</li>
+          <li>Comfortable with HTML/CSS/JS, a dash of Python, and APIs.</li>
+          <li>Currently exploring AI-powered tools & small, delightful web apps.</li>
+        </ul>
+      </div>
+    </section>
 
-  function render() {
-    const substr = text.substring(0, idx);
-    el.innerText = substr;
-    el.setAttribute("data-text", substr);
-  }
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="sub">A rotating set of things I'm building or maintaining. Swap in your own easily—see the <em>projects</em> array in the code.</p>
+      <div class="grid" id="projectsGrid" aria-live="polite"></div>
+    </section>
 
-  nextAction();
-</script>
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="card">
+          <p>I'm Mack, a maker who likes clean interfaces and small tools that do one job really well. I care about fast load times, readable code, and thoughtful details.</p>
+          <p>When I'm not shipping projects, I'm learning new tricks, sketching ideas, or tinkering with game concepts.</p>
+        </div>
+        <div class="card">
+          <p><strong>Currently into:</strong></p>
+          <ul style="margin:10px 0 0 18px; color: var(--muted);">
+            <li>Lightweight backends (Cloudflare Workers, Fly.io)</li>
+            <li>Prompt-driven features & evaluation</li>
+            <li>Design systems and micro-animations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <p style="margin:0; color: var(--muted)">Want to say hi or start something? Reach out below.</p>
+        <div class="socials">
+          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Mack Herman — Made with care.</div>
+  </footer>
 
-	</body>
+  <script>
+    // ---- Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---- Projects data: edit this array to add your projects
+    const projects = [
+      {
+        title: 'Instant Estimate Widget',
+        blurb: 'A drop-in JavaScript widget that gives fast estimates for home services using address + photos.',
+        href: '#',
+        tag: 'Widget'
+      },
+      {
+        title: 'Unblocked Study Tools',
+        blurb: 'Lightweight, school-friendly utilities packaged in a single clean page.',
+        href: '#',
+        tag: 'Tools'
+      },
+      {
+        title: 'Orion Drift Helpers',
+        blurb: 'Small QoL scripts and a minimal site for community events.',
+        href: '#',
+        tag: 'Community'
+      }
+    ];
+
+    // ---- Render projects
+    const grid = document.getElementById('projectsGrid');
+    function card({title, blurb, href, tag}) {
+      const el = document.createElement('a');
+      el.className = 'project-card';
+      el.href = href || '#';
+      el.target = href && href.startsWith('http') ? '_blank' : '_self';
+      el.rel = 'noopener';
+      el.innerHTML = `
+        <div class="project-thumb">${tag || 'Project'}</div>
+        <div class="project-body">
+          <h3 class="project-title">${title}</h3>
+          <div class="project-meta">${blurb}</div>
+        </div>`;
+      return el;
+    }
+    projects.forEach(p => grid.appendChild(card(p)));
+
+    // ---- Smooth scroll for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        const target = document.getElementById(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+      });
+    });
+  </script>
+  </main>
+</body>
 </html>
