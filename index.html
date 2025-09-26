@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mack Herman</title>
+  <meta name="description" content="Official website of the REAL Mack Herman." />
+  <meta name="theme-color" content="#0e0f12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/waveemoji.png">
+  <style>
+    :root {
+      --bg: #0e0f12;            
+      --panel: #14171d;         
+      --text: #e9eef6;        
+      --muted: #9aa6bd;        
+      --brand: #7dd3fc;        
+      --accent: #f0abfc;       
+      --lime: #bef264;          
+      --ring: 0 0 0 6px rgba(125,211,252,.15);
+      --border: #232a36;        
+      --shadow: 0 30px 80px rgba(0,0,0,.55);
+      --radius: 18px;
+    }
+
+    :root.light {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --text: #0b1220;
+      --muted: #5b6b83;
+      --brand: #2563eb;
+      --accent: #7c3aed;
+      --lime: #16a34a;
+      --border: #e6ebf3;
+      --shadow: 0 30px 70px rgba(2,6,23,.08);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 700px at 120% -20%, rgba(125,211,252,.12), transparent 60%),
+                  radial-gradient(900px 600px at -20% 120%, rgba(240,171,252,.10), transparent 60%),
+                  var(--bg);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .shell { display:grid; grid-template-columns: 280px 1fr; min-height: 100dvh; }
+    .dock {
+      position: sticky; top: 0; align-self: start; height: 100dvh;
+      padding: 26px 22px; border-right: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 18%), var(--bg);
+      display: grid; grid-template-rows: auto 1fr auto; gap: 24px;
+    }
+
+    .id {
+      display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center;
+    }
+    .avatar { width:56px; aspect-ratio:1; border-radius:14px; display:grid; place-items:center; font-weight:800;
+      color:#0b0f14; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: var(--ring); }
+    .name { font-weight:700; font-size: 22px; letter-spacing: .3px; }
+    .role { color: var(--muted); margin-top: -6px; font-size: 14px; }
+
+    .dock nav { display:grid; gap: 6px; align-content: start; }
+    .dock nav a {
+      display:flex; align-items:center; gap:10px; padding:10px 12px; border-radius: 12px;
+      color: var(--muted); border:1px solid transparent;
+    }
+    .dock nav a[aria-current="page"], .dock nav a:hover { color: var(--text); background: var(--panel); border-color: var(--border); }
+
+    .toggle-row { display:flex; gap:10px; align-items:center; justify-content: space-between; }
+    .theme-toggle { padding: 10px 12px; border-radius: 12px; border:1px solid var(--border); background: var(--panel); color: var(--text); cursor:pointer; }
+
+    main { padding: 40px; }
+    .stack { display:grid; gap: 28px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+    .hero { display:grid; grid-template-columns: 1.3fr 1fr; gap: 22px; align-items: stretch; }
+    .hero .lead { padding: 26px; border-radius: var(--radius); position: relative; overflow: clip; }
+    .hero h1 { font-size: clamp(34px, 5vw, 64px); line-height: 1.04; margin: 0 0 12px; letter-spacing: .2px; }
+    .hero p { margin: 0 0 16px; color: var(--muted); font-size: clamp(16px, 1.25vw, 18px); }
+
+    .hero .lead .chips { display:flex; flex-wrap: wrap; gap:10px; margin-top: 18px; }
+    .chip { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius: 999px; border:1px solid var(--border); background: rgba(255,255,255,.04); font-weight:600; color: var(--text); }
+
+    .cta-row { display:flex; gap:12px; flex-wrap: wrap; margin-top: 14px; }
+    .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius: 12px; font-weight:700; border:1px solid var(--border); background: linear-gradient(90deg, var(--brand), var(--accent)); color:#0b0f14; }
+    .btn.ghost { background: transparent; color: var(--text); }
+
+    .facts { padding: 26px; display:grid; align-content:center; }
+    .facts ul { margin: 0; padding-left: 18px; color: var(--muted); }
+    .facts h3 { margin: 0 0 8px; }
+
+    section h2 { font-size: clamp(22px, 3vw, 28px); letter-spacing: .3px; margin: 0; }
+    .sub { color: var(--muted); margin: 6px 0 0; }
+
+    .timeline { padding: 22px; display:grid; gap: 14px; }
+    .item { display:grid; grid-template-columns: 32px 1fr; gap: 14px; }
+    .dot { width: 10px; height: 10px; border-radius:50%; background: var(--brand); margin-top: 9px; box-shadow: 0 0 0 4px rgba(125,211,252,.15); }
+    .item .body { border: 1px dashed var(--border); border-radius: 14px; padding: 12px 14px; }
+    .title { font-weight:700; margin: 0 0 4px; }
+    .meta { color: var(--muted); font-size: 14px; }
+
+    .about { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; padding: 22px; }
+    .about .panel { border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+    .about ul { margin: 8px 0 0 18px; color: var(--muted); }
+
+    .contact { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 18px 22px; }
+    .contact .right { display:flex; gap: 10px; flex-wrap: wrap; }
+
+    footer { color: var(--muted); text-align:center; padding: 22px 0 36px; }
+
+    @media (max-width: 980px) {
+      .shell { grid-template-columns: 1fr; }
+      .dock { position: static; height: auto; grid-template-rows: auto; }
+      main { padding: 26px; }
+      .hero { grid-template-columns: 1fr; }
+      .about { grid-template-columns: 1fr; }
+    }
+
+    .lead::after {
+      content:""; position:absolute; inset: -1px; pointer-events:none; border-radius: inherit;
+      background: radial-gradient(500px 200px at var(--mx,50%) var(--my,50%), rgba(190,242,100,.12), transparent 40%);
+      transition: 150ms ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="dock" aria-label="Sidebar">
+      <div class="id">
+        <div class="avatar" aria-hidden="true">MH</div>
+        <div>
+          <div class="name">Mack Herman</div>
+          <div class="role">Builds useful things on the web</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="toggle-row">
+        <span style="color:var(--muted); font-size:14px">Theme</span>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">🌙</button>
+      </div>
+    </aside>
+
+    <main id="home">
+      <div class="stack">
+        <section class="hero">
+          <div class="card lead" id="lead">
+            <h1>Hey, I’m <span style="color:var(--brand)">Mack</span>.</h1>
+            <p>I’m a high school student whose interests take me in different directions than schoolwork.</p>
+            <div class="chips">
+              <span class="chip">Design • Front‑End</span>
+              <span class="chip">AI + APIs</span>
+              <span class="chip">HTML/CSS/JS • Python</span>
+            </div>
+            <div class="cta-row">
+              <a class="btn" href="#projects">See projects →</a>
+              <a class="btn ghost" href="#contact">Say hello</a>
+            </div>
+          </div>
+          <aside class="card facts" aria-label="Quick facts">
+            <h3>Quick facts</h3>
+            <ul>
+              <li>Jesus is my source of hope and direction.</li>
+              <li>Comfortable with HTML/CSS/JS, a dash of Python.</li>
+              <li>Diving into AI tools and integrated APIs.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="card" id="projects">
+          <div style="padding: 18px 22px 0;">
+            <h2>Projects</h2>
+            <p class="sub">A few things I’ve built or am building right now.</p>
+          </div>
+          <div class="timeline" id="timeline" aria-live="polite"></div>
+        </section>
+
+        <section class="card" id="about">
+          <div style="padding: 18px 22px 0;">
+            <h2>About</h2>
+          </div>
+          <div class="about">
+            <div class="panel">
+              <p>I’m Mack, a high school student that enjoys making ideas into reality.</p>
+              <p>When I’m not buried in schoolwork, I love creating designs that make life easier and better for others.</p>
+            </div>
+            <div class="panel">
+              <p><strong>Currently into:</strong></p>
+              <ul>
+                <li>AI‑integrated software</li>
+                <li>Prompt‑driven features & evaluation</li>
+                <li>Visually appealing front‑end</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card contact" id="contact">
+          <p style="margin:0; color: var(--muted)">Want to say hi or collaborate?</p>
+          <div class="right">
+            <a class="btn" href="mailto:28hermanm@gmail.com">Email me</a>
+          </div>
+        </section>
+
+        <footer>© <span id="year"></span> Mack Herman.</footer>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) root.classList.toggle('light', saved === 'light');
+    function syncToggle(){
+      const isLight = root.classList.contains('light');
+      toggle.textContent = isLight ? '☀️' : '🌙';
+      toggle.setAttribute('aria-pressed', String(isLight));
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', isLight ? '#f6f8fb' : '#0e0f12');
+    }
+    syncToggle();
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('light');
+      localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
+      syncToggle();
+    });
+
+    const projects = [
+      {
+        title: 'Upcoming AI Project...',
+        blurb: 'In the early stages of building an AI-powered tool.',
+        href: '',
+        tag: 'Under Development.'
+      },
+      {
+        title: 'Project Plus Unblocked Games',
+        blurb: 'An awesome game site that had hundreds of games. It was good while it lasted, but sadly all good things have to come to an end. R.I.P. — (December 5th, 2023 - March 5th, 2025)',
+        href: '',
+        tag: 'Project Plus'
+      },
+      {
+        title: 'This Website',
+        blurb: 'A simple (but visually appealing) fully static website. Made with HTML, CSS, and JS.',
+        href: '',
+        tag: 'Personal Website'
+      }
+    ];
+
+    const tl = document.getElementById('timeline');
+    function row({title, blurb, href, tag}){
+      const wrap = document.createElement('div');
+      wrap.className = 'item';
+      wrap.innerHTML = `
+        <div class="dot"></div>
+        <div class="body">
+          <div class="title">${title}</div>
+          <div class="meta">${tag || 'Project'}</div>
+          <p style="margin:.5rem 0 0; color:var(--muted)">${blurb}</p>
+          ${href ? `<p style="margin:.5rem 0 0"><a href="${href}" target="_blank" rel="noopener">Open ↗</a></p>` : ''}
+        </div>`;
+      return wrap;
+    }
+    projects.forEach(p => tl.appendChild(row(p)));
+
+    const links = [...document.querySelectorAll('.dock nav a')];
+    links.forEach(a => a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id) || document.querySelector(`[id^="${id}"]`);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + id);
+      }
+    }));
+    const spy = new IntersectionObserver((entries)=>{
+      const vis = entries.filter(e => e.isIntersecting).sort((a,b)=> b.intersectionRatio - a.intersectionRatio)[0];
+      if(!vis) return;
+      const id = vis.target.id;
+      links.forEach(l => l.removeAttribute('aria-current'));
+      const active = links.find(l => l.getAttribute('href') === '#' + id);
+      if (active) active.setAttribute('aria-current','page');
+    }, { threshold: 0.5 });
+    ['home','projects','about','contact'].forEach(id=> spy.observe(document.getElementById(id)));
+
+    const lead = document.getElementById('lead');
+    lead.addEventListener('pointermove', (e)=>{
+      const r = lead.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width) * 100;
+      const y = ((e.clientY - r.top) / r.height) * 100;
+      lead.style.setProperty('--mx', x + '%');
+      lead.style.setProperty('--my', y + '%');
+    });
+  </script>
+</body>
+</html>
